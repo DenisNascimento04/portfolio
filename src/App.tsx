@@ -13,7 +13,8 @@ import ImgLarning from './assets/wallpaper-larning1.jpg';
 import ImgCard from './assets/wallpaper-card.jpg'
 import ImgEcommerce from './assets/wallpaper-ecommerce.jpg'
 import ImgGerador from './assets/wallpaper-gerador.jpg'
-import FotoPerfil1 from './assets/foto-perfil.jpg';
+import ImgJogo from './assets/wallpaper-jogo.jpg';
+import FotoPerfil from './assets/img-perfil.png';
 import { 
   Barras, 
   Container, 
@@ -69,6 +70,12 @@ function App() {
       nivel: "Nível: Médio",
       link: "https://denisnascimento04.github.io/Front-end--ecommerce/"
     },
+    {
+      nome: "Jogo de Pedra, Papel e Tesoura",
+      img: ImgJogo,
+      nivel: "Nível: Difícil",
+      link: "https://denisnascimento04.github.io/jogo-pedra-papel-tesoura/"
+    },
   ];
 
   const handleScroll = () =>{
@@ -107,18 +114,16 @@ function App() {
   }
 
   window.onscroll = () => handleScroll()
-  
-  console.log(document.documentElement.scrollTop);
 
   return (
     <Container>
       <NavHidden className={showNav}>
           <h1>DENIS</h1>
           <nav className={showNavMobile2 ? 'show' : ''}>
-            <a href="#home">Home</a>
-            <a href="#sobre" style={{ color: scroll >=500 && scroll<3400 ? '#6F6BF2': ''}}>Sobre mim</a>
-            <a href="#portifolio" style={{ color: scroll >=3400 && scroll<4400 ? '#6F6BF2': ''}}>Portfólio</a>
-            <a href="#contato" style={{ color: scroll >=4400 ? '#6F6BF2': ''}}>Contato</a>
+            <a href="#home" onClick={() => setShowNavMobile2(false)}>Home</a>
+            <a href="#sobre" onClick={() => setShowNavMobile2(false)} style={{ color: scroll >=500 && scroll<3400 ? '#6F6BF2': ''}}>Sobre mim</a>
+            <a href="#portifolio" onClick={() => setShowNavMobile2(false)} style={{ color: scroll >=3400 && scroll<4200 ? '#6F6BF2': ''}}>Portfólio</a>
+            <a href="#contato" onClick={() => setShowNavMobile2(false)} style={{ color: scroll >=4200 ? '#6F6BF2': ''}}>Contato</a>
           </nav>
           <button onClick={() => setShowNavMobile2(!showNavMobile2)}>
             <AiOutlineMenu size={30} color='#fff'/>
@@ -130,10 +135,10 @@ function App() {
         <header>
           <h1>DENIS</h1>
           <nav className={showNavMobile ? 'show' : ''}>
-            <a href="#home" style={{ color: scroll >=0 && scroll<3400 ? '#6F6BF2': '' }}>Home</a>
-            <a href="#sobre">Sobre mim</a>
-            <a href="#portifolio">Portfólio</a>
-            <a href="#contato">Contato</a>
+            <a href="#home" onClick={() => setShowNavMobile(false)} style={{ color: scroll >=0 && scroll<3400 ? '#6F6BF2': '' }}>Home</a>
+            <a href="#sobre" onClick={() => setShowNavMobile(false)}>Sobre mim</a>
+            <a href="#portifolio" onClick={() => setShowNavMobile(false)}>Portfólio</a>
+            <a href="#contato" onClick={() => setShowNavMobile(false)}>Contato</a>
           </nav>
           <button onClick={() => setShowNavMobile(!showNavMobile)}>
             <AiOutlineMenu size={30} color='#fff'/>
@@ -152,16 +157,17 @@ function App() {
             </p>
             <ul className='redes'>
               <li>
-                <a><AiFillLinkedin size={30} color='#fff' /></a>
+                <a target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/denisnascimentodossantos22/'>
+                  <AiFillLinkedin size={30} color='#fff' />
+                </a>
               </li>
               <li>
-                <a><AiFillGithub size={30} color='#fff' /></a>
+                <a target='_blank' rel="noreferrer" href='https://github.com/DenisNascimento04'>
+                  <AiFillGithub size={30} color='#fff' />
+                </a>
               </li>
             </ul>
           </div>
-          <aside className='foto-home'>
-            <img src={FotoPerfil1} alt="foto de perfil 1" />
-          </aside>
         </section>
       </Home>
 
@@ -179,23 +185,26 @@ function App() {
           </TitulosCat>
           <div data-anime="left" className={scroll >=320? 'conteudo-right animate': 'conteudo-right'}>
             <div className='foto'>
-              <img src={FotoPerfil1} alt="foto de perfil 2" />
+              <img src={FotoPerfil} alt="foto de perfil 2" />
             </div>
 
             <div className='conteudo'>
-              <h1>Olá, Me chamo <span>Denis</span></h1>
+              <h1>Olá, meu nome é <span>Denis</span></h1>
               <p>
-                Entrei na área de tecnologia por acaso e gostei muito 
-                foi o melhor chute da minha vida. Apesar de ter feito 
-                faculdade e ter aprendido vários conceitos tenho um 
-                carinho especial pelo front-end mas nada me impede de 
-                me arriscar pelo back-end. Realizei meu estágio como 
-                suporte técnico, mas admito que queria ter aprendido 
-                mais, estou buscando minha primeira oportunidade como 
-                desenvolvedor no mercado de trabalho, mesmo sem 
-                experiência estou sempre disposto a aprender e me 
-                cobro bastante quando erro e quando não tenho 
-                conhecimento para algo.
+                Entrei na área de tecnologia por acaso e 
+                gostei muito foi o melhor chute da minha 
+                vida. Apesar de ter feito faculdade e ter 
+                aprendido vários conceitos tenho um 
+                carinho especial pelo front-end mas 
+                nada me impede de me arriscar pelo 
+                back-end. Realizei meu estágio como 
+                suporte técnico, mas admito que queria 
+                ter aprendido mais, estou buscando minha 
+                primeira oportunidade como desenvolvedor 
+                no mercado de trabalho, mesmo sem 
+                experiência estou sempre disposto a 
+                aprender e me cobro bastante quando erro e 
+                quando não tenho conhecimento para algo.
               </p>
               <div className='dados'>
                 <p><span>Nome:</span> Denis Nascimento dos Santos</p>
@@ -362,7 +371,7 @@ function App() {
                   <div className='info-port'>
                     <h1>{item.nome}</h1>
                     <p>{item.nivel}</p>
-                    <a href={item.link} target='_blank'>
+                    <a rel="noreferrer" href={item.link} target='_blank'>
                       <AiOutlineArrowRight 
                         color='#fff' 
                         size={24} 

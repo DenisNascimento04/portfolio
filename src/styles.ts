@@ -205,15 +205,17 @@ export const Home = styled.div`
         z-index: 999;
         display: flex;
         align-items: center;
-        /* background-color: red; */
+        justify-content: center;
         flex: 2;
         margin: 0 12%;
-        padding-bottom: 100px;
+        padding: 150px 0;
     }
 
     section .apresentacao{
         display: flex;
         gap: 20px;
+        align-items: center;
+        max-width: 650px;
         flex-direction: column;
         flex: 1;
     }
@@ -250,21 +252,32 @@ export const Home = styled.div`
     }
     section .apresentacao p{
         font-size: 24px;
+        line-height: 24px;
+        text-align: center;
     }
     section .apresentacao ul{
         display: flex;
+        gap: 20px;
         padding: 0;
         border: 0;
         list-style: none;
     }
     section .apresentacao ul li{
-        padding: 10px;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border-color: red;
         cursor: pointer;
-        /* border: 1px solid var(--cinza); */
+        border-radius: 100%;
+        border: 1px solid #f2f2f2;
+        transition: .5s;
+    }
+    section .apresentacao ul li:hover{
+        background-color: var(--destaque);
     }
     section .foto-home{
-        /* background-color: green; */
         flex: 1;
         height: 500px;
         display: flex;
@@ -273,9 +286,9 @@ export const Home = styled.div`
         padding: 60px;
     } 
     section .foto-home img{
-        width: 80%;
-        height: 80%;
-        border-radius: 50px;
+        width: 68%;
+        height: 100%;
+        border-radius: 100%;
         object-fit: cover;
     }
     @media only screen and (max-width: 425px) {
@@ -288,6 +301,10 @@ export const Home = styled.div`
         }
         header{
             margin: 20px 5%;
+            /* position: fixed; */
+        }
+        header h1{
+            font-size: 20px;
         }
         header nav{
             /* display: none; */
@@ -297,17 +314,21 @@ export const Home = styled.div`
             right: 10%;
             top: 7%;
             border-radius: 10px;
-            padding: 20px;
+            padding: 40px;
             opacity: 0;
             transition: .2s;
         }
         header nav.show{
             opacity: 1;
         }
+        header nav a{
+            background-color: red;
+        }
         header button{
-            display: block;
+            display: flex;
             padding: 0;
             border: 0;
+            z-index: 9;
             background-color: transparent;
         }
         section {
@@ -316,15 +337,21 @@ export const Home = styled.div`
             padding: 0;
         }
 
-        section .apresentacao h2{
-            font-size: 24px;
-        }
         section .apresentacao h1{
-            font-size: 24px;
+            font-size: 20px;
+        }
+        section .apresentacao h2{
+            font-size: 20px;
         }
         section .apresentacao p{
-            font-size: 16px;
+            font-size: 14px;
         }
+
+        section .apresentacao ul li{
+            height: 50px;
+            width: 50px;
+        }
+
         section .foto-home{
             height: auto;
             padding: 20px 0;
@@ -370,7 +397,7 @@ export const SobreMim = styled.section`
     gap: 60px;
     padding-top: 100px;
     .conteudo-right .foto{
-        height: 600px;
+        height: 700px;
         padding: 20px;
         background-color: var(--cinza);
         flex: 1;
