@@ -110,6 +110,7 @@ function App() {
     }
     else{
       alert('Erro ao enviar o email. Verifique se todos os campos foram prenchidos.')
+      setEnviando(false);
     }
   }
 
@@ -149,7 +150,7 @@ function App() {
           <div className='apresentacao'>
             <h2>Olá!</h2>
             <h1>
-              Sou um <br/><span>Desenvolvedor Front-end</span>
+              Sou um <br/><span>Desenvolvedor Web</span>
             </h1>
             <p>
               Desenvolvedor Web e mobile, sem experiência, 
