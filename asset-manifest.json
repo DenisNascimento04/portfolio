@@ -1,10 +1,9 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f3580c40.css",
-    "main.js": "/portfolio/static/js/main.eecdf40e.js",
+    "main.js": "/portfolio/static/js/main.2c27b924.js",
+    "static/media/wallpaper-home.jpg": "/portfolio/static/media/wallpaper-home.d5b3f2b7e5dfcafef6ee.jpg",
     "static/media/img-perfil.png": "/portfolio/static/media/img-perfil.4bb77e68e915552b7bb3.png",
-    "static/media/walllpaper-home.jpg": "/portfolio/static/media/walllpaper-home.9f1a6ac3cb9546f703d6.jpg",
-    "static/media/wallpaper-home-mobile.jpg": "/portfolio/static/media/wallpaper-home-mobile.b490dd7eae49d8a3842b.jpg",
     "static/media/wallpaper-larning1.jpg": "/portfolio/static/media/wallpaper-larning1.41f992b2ed4062e06d1f.jpg",
     "static/media/wallpaper-ecommerce.jpg": "/portfolio/static/media/wallpaper-ecommerce.0b36d6ce971ad4109fef.jpg",
     "static/media/wallpaper-card.jpg": "/portfolio/static/media/wallpaper-card.07fb6d03f2299581d160.jpg",
@@ -12,10 +11,10 @@
     "static/media/wallpaper-gerador.jpg": "/portfolio/static/media/wallpaper-gerador.70f3875f05b0b04fd52a.jpg",
     "index.html": "/portfolio/index.html",
     "main.f3580c40.css.map": "/portfolio/static/css/main.f3580c40.css.map",
-    "main.eecdf40e.js.map": "/portfolio/static/js/main.eecdf40e.js.map"
+    "main.2c27b924.js.map": "/portfolio/static/js/main.2c27b924.js.map"
   },
   "entrypoints": [
     "static/css/main.f3580c40.css",
-    "static/js/main.eecdf40e.js"
+    "static/js/main.2c27b924.js"
   ]
 }
