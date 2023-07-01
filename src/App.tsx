@@ -174,7 +174,7 @@ function App() {
 
       <main id='sobre'>
         <SobreMim>
-          <TitulosCat data-anime="right" className={scroll >=160? 'animate': ''}>
+          <TitulosCat data-anime="right" className={scroll >= 350? 'animate': ''}>
             <h1>
               Sobre <span>Mim</span>
             </h1>
@@ -219,11 +219,11 @@ function App() {
         </SobreMim>
 
         <Barras>
-          <TitulosCat data-anime="left" className={scroll >=1000? 'animate': ''}>
+          <TitulosCat data-anime="left" className={scroll >= 1450 ? 'animate': ''}>
             <h1>Minhas <span>Habilidades</span></h1>
             <Separador />
           </TitulosCat>
-          <div data-anime="right" className={scroll >=1200? 'conteudo animate': 'conteudo'}>
+          <div data-anime="right" className={scroll >=1500? 'conteudo animate': 'conteudo'}>
             <div className='left'>
               <div>
                 <div className='titulos'>
@@ -304,11 +304,11 @@ function App() {
         </Barras>
 
         <Qualificacoes>
-          <TitulosCat data-anime="up" className={scroll >=1600? 'animate': ''}>
+          <TitulosCat data-anime="up" className={scroll >= 2000 ? 'animate': ''}>
             <h1>Minhas <span>Qualificações</span></h1>
             <Separador />
           </TitulosCat>
-          <div data-anime="up" className={scroll >=1800? 'conteudo animate': 'conteudo'}>
+          <div data-anime="up" className={scroll >= 2100 ? 'conteudo animate': 'conteudo'}>
             <div className='left'>
               <div className='titulo'>
                 <HiAcademicCap size={40} color='#6F6BF2' />
@@ -354,7 +354,7 @@ function App() {
         </Qualificacoes>
 
         <Portfolio id='portifolio'>
-          <TitulosCat data-anime="up" className={scroll >=2600? 'animate': ''}>
+          <TitulosCat data-anime="up" className={scroll >= 3000 ? 'animate': ''}>
             <h1>
               Meu <span>Portfólio</span>
             </h1>
@@ -364,7 +364,7 @@ function App() {
             </p>
             <Separador />
           </TitulosCat>
-          <div data-anime="left" className={scroll >=2700? 'conteudo animate': 'conteudo'}>
+          <div data-anime="left" className={scroll >= 3200 ? 'conteudo animate': 'conteudo'}>
             <ul>
               {portfolio.map((item, index) => (
                 <li key={index}>
@@ -385,7 +385,7 @@ function App() {
           </div>
         </Portfolio>
 
-        <Contato data-anime="left" className={scroll >=3600? 'animate': ''} id='contato'>
+        <Contato data-anime="left" className={scroll >= 4000 ? 'animate': ''} id='contato'>
           <TitulosCat style={{ marginBottom: 100 }}>
             <h1>
               Entrar em <span>Contato</span>

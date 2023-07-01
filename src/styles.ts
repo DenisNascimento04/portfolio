@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import WallpaperHome from './assets/walllpaper-home.jpg';
+import WallpaperHome from './assets/wallpaper-home.jpg';
 import WallpaperHomeMobile from './assets/wallpaper-home-mobile.jpg';
 
 export const Container = styled.div`
@@ -15,7 +15,7 @@ export const Container = styled.div`
     @media only screen and (max-width: 425px) {
         width: 100%;
     }
-    @media only screen and (min-width: 1440px) {
+    @media only screen and (min-width: 1300px) {
         [data-anime]{
             opacity: 0;
             transition: .7s;
@@ -57,7 +57,7 @@ export const NavHidden = styled.header`
         gap: 20px;
     }
     nav a{
-        font-size: 20px;
+        font-size: 1.25rem;
         color: #fff;
         text-decoration: none;
         transition: .5s;
@@ -109,7 +109,7 @@ export const NavHidden = styled.header`
         width: 100%;
         padding: 10px 0;
         h1{
-            font-size: 24px;
+            font-size: 1.5rem;
             margin-left: 10px;
         }
         nav{
@@ -179,7 +179,7 @@ export const Home = styled.div`
         gap: 20px;
     }
     header nav a{
-        font-size: 20px;
+        font-size: 1.25rem;
         color: #fff;
         text-decoration: none;
         transition: .5s;
@@ -220,13 +220,13 @@ export const Home = styled.div`
         flex: 1;
     }
     section .apresentacao h2{
-        font-size: 32px;
+        font-size: 2rem;
         font-weight: 500;
         color: var(--destaque);
     }
     section .apresentacao h1{
         /* display: flex; */
-        font-size: 32px;
+        font-size: 2rem;
     }
     section .apresentacao h1 span{
         display: inline-flex;
@@ -251,7 +251,7 @@ export const Home = styled.div`
         }
     }
     section .apresentacao p{
-        font-size: 24px;
+        font-size: 1.5rem;
         line-height: 24px;
         text-align: center;
     }
@@ -297,14 +297,14 @@ export const Home = styled.div`
             display: block;
         }
         .img-back{
-            content: url(${WallpaperHomeMobile});
+            content: url(${WallpaperHome});
         }
         header{
             margin: 20px 5%;
             /* position: fixed; */
         }
         header h1{
-            font-size: 20px;
+            font-size: 1.25rem;
         }
         header nav{
             /* display: none; */
@@ -338,13 +338,13 @@ export const Home = styled.div`
         }
 
         section .apresentacao h1{
-            font-size: 20px;
+            font-size: 1.25rem;
         }
         section .apresentacao h2{
-            font-size: 20px;
+            font-size: 1.25rem;
         }
         section .apresentacao p{
-            font-size: 14px;
+            font-size: 0.875rem;
         }
 
         section .apresentacao ul li{
@@ -368,21 +368,21 @@ export const TitulosCat = styled.div`
     align-items: center;
     gap: 20px;
     h1{
-        font-size: 48px;
+        font-size: 3rem;
     }
     p{
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: 30px;
         max-width: 55%;
         text-align: center;
     }
     @media only screen and (max-width: 425px) {
         h1{
-            font-size: 32px;
+            font-size: 2rem;
             text-align: center;
         }
         p{
-            font-size: 14px;
+            font-size: 0.875rem;
             max-width: 85%;
         }
     }
@@ -418,11 +418,11 @@ export const SobreMim = styled.section`
         flex: 1;
     }
     .conteudo-right .conteudo h1{
-        font-size: 32px;
+        font-size: 2rem;
     }
     .conteudo-right .conteudo p{
         line-height: 30px;
-        font-size: 16px;
+        font-size: 1rem;
     }
     .conteudo-right .conteudo .dados{
         display: flex;
@@ -440,10 +440,10 @@ export const SobreMim = styled.section`
             /* gap: 10px; */
         }
         .conteudo-right .conteudo h1{
-            font-size: 24px;
+            font-size: 1.5rem;
         }
         .conteudo-right .conteudo p{
-            font-size: 14px;
+            font-size: 0.875rem;
         }
         .conteudo-right .conteudo .dados{
             gap: 5px;
@@ -482,7 +482,7 @@ export const Barras = styled.section`
         margin-bottom: 4px;
     }
     .conteudo .titulos p{
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     .conteudo .barra{
         width: 100%;
@@ -502,7 +502,7 @@ export const Barras = styled.section`
             gap: 20px;
         }
         .conteudo .titulos p{
-            font-size: 14px;
+            font-size: 0.875rem;
         }
     }
 `
@@ -532,7 +532,7 @@ export const Qualificacoes = styled.section`
     .conteudo .left .titulo h1,    
     .conteudo .right .titulo h1{
         margin-left: 10px;
-        font-size: 40px;
+        font-size: 2.5rem;
     }
     
     .conteudo .right{
@@ -550,7 +550,7 @@ export const Qualificacoes = styled.section`
     }
 
     .conteudo .card h1,h2,p{
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     .conteudo .card h2{
         color: var(--destaque);
@@ -562,10 +562,10 @@ export const Qualificacoes = styled.section`
         }
         .conteudo .left .titulo h1,    
         .conteudo .right .titulo h1{
-            font-size: 32px;
+            font-size: 2rem;
         }
         .conteudo .card h1,h2,p{
-            font-size: 14px;
+            font-size: 0.875rem;
         }
         .conteudo .card p{
             line-height: 25px;
@@ -717,11 +717,11 @@ export const Footer = styled.footer`
     padding: 40px;
     background-color: var(--destaque);
     p{
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     @media only screen and (max-width: 425px){
         p{
-            font-size: 12px;
+            font-size: .75rem;
         }
     }
 `
